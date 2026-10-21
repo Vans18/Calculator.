@@ -1,12 +1,17 @@
 // Service worker: saves the app files on the phone so it opens offline.
-const CACHE = 'calc-v1';                      // change to calc-v3, v4... when you update the app
+const CACHE = 'calc-v2';                      // change to calc-v3, v4... when you update the app
 const FILES = [
   './',
   './index.html',
   './manifest.webmanifest',
   './icon-192.png',
   './icon-512.png',
-  './icon-maskable-512.png'
+  './icon-maskable-512.png',
+  './screenshot-1.png',
+  './screenshot-2.png',
+  './screenshot-3.png',
+  './screenshot-4.png',
+  './screenshot-5.png'
 ];
 
 self.addEventListener('install', e => {
