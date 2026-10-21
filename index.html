@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Calculator</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0a141f">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="themes" role="group" aria-label="Theme">
+  <button type="button" data-theme-btn="light" aria-pressed="false">Light</button>
+  <button type="button" data-theme-btn="dark" aria-pressed="false">Dark</button>
+</div>
+
+<main class="calc" aria-label="Calculator">
+  <div class="screen">
+    <button class="back" id="back" type="button" aria-label="Delete last character">⌫</button>
+    <div class="expr" id="expr" aria-live="off"><span></span></div>
+    <div class="result" id="result" aria-live="polite">0</div>
+  </div>
+<div class="pad">
+  <div class="sci-keys" id="sciKeys"></div>
+  <div class="keys" id="keys"><canvas id="fx" aria-hidden="true"></canvas></div>
+</div>
+  
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
